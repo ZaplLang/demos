@@ -1,0 +1,15 @@
+# Fib
+# ---
+# 
+# The fibonacci sequence.
+#
+# Exercise adapted from: https://exercism.io/
+# Author: https://github.com/zana-a/
+# License: MIT
+
+def fib(n: Int): Int = cond do
+  n < 3 => 1
+  _ => fib(n - 1) +  fib(n - 2)
+end
+
+println(fib(12))

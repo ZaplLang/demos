@@ -14,7 +14,7 @@
 # He answers 'Whatever.' to anything else.
 #
 # Exercise adapted from: https://exercism.io/
-# Author: Zana
+# Author: https://github.com/zana-a/
 # License: MIT
 
 mod Bob do
