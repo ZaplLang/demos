@@ -20,7 +20,7 @@
 mod Bob do
   def has_ending(i: String, s: String): Boolean = i::reverse::contains(s)
 
-  def hey(input: String): Any = cond do
+  def hey(input: String): String = cond do
     has_ending(input, "?") => "Sure."
     has_ending(input, "!") => "Whoa, chill out!"
     has_ending(input, "!?") => "Calm down, I know what I'm doing!"
