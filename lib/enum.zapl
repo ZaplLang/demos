@@ -13,4 +13,6 @@ mod Enum do
     list::eq([]) => c
     _ => count(list::drop(1), c + 1)
   end
+
+  def drop(list: List<Any>, n: Int): List<Any> = list::drop(n)
 end
