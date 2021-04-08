@@ -1,0 +1,19 @@
+
+mod Bob do
+  def has_ending(i: String, s: String): Boolean = do
+    i::reverse::contains(s)
+  end
+
+  def hey(input: String): Any = do
+
+    cond do
+      has_ending(input, "?") => "Ok."
+      has_ending(input, "!") => "Leave me alone!"
+      has_ending(input, "!?") => "Relax, I know what I am doing."
+      _ => "Whatever."
+    end
+  end
+
+end
+
+print(Bob::hey("  hey "))
