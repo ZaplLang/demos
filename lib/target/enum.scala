@@ -8,11 +8,10 @@ object Application extends App {
 // License: MIT
 //
 object Enum {
-// Counts the amount of items in the list.
+// counts the amount of items in the list.
 def count(list: List[Any], c: scala.Int): scala.Int = if (list.eq(List())) c
-else count(list.drop(1), c + 1)
+else count(Enum.drop(list, 1), c + 1)
+// drops the [n] amount of items of a list.
 def drop(list: List[Any], n: scala.Int): List[Any] = list.drop(n)
 }
-println(Enum.count(List(1, 2, 3, 4, 5, 6, "hi", List()), 0))
-println(Enum.drop(List(1, 2, 3, 4, 5, 6, "hi", List()), 6))
 }

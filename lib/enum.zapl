@@ -8,11 +8,12 @@
 #
 mod Enum do
   
-  # Counts the amount of items in the list.
+  # counts the amount of items in the list.
   def count(list: List<Any>, c: Int): Int = cond do
     list::eq([]) => c
-    _ => count(list::drop(1), c + 1)
+    _ => count(Enum::drop(list, 1), c + 1)
   end
 
+  # drops the [n] amount of items of a list.
   def drop(list: List<Any>, n: Int): List<Any> = list::drop(n)
 end
