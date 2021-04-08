@@ -1,0 +1,16 @@
+# Enum
+# ---
+# 
+# A bunch of functions to be used with lists.
+#
+# Author: https://github.com/zana-a/
+# License: MIT
+#
+mod Enum do
+  
+  # Counts the amount of items in the list.
+  def count(list: List<Any>, c: Int): Int = cond do
+    list::eq([]) => c
+    _ => count(list::drop(1), c + 1)
+  end
+end
